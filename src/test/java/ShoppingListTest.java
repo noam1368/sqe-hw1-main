@@ -1,4 +1,5 @@
 
+import org.junit.jupiter.api.*;
 import sise.sqe.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -28,7 +29,7 @@ public class ShoppingListTest {
 
         supermarket = Mockito.mock(Supermarket.class);
         shoppingList = new ShoppingList(supermarket);
-        shoppingList=null
+
     }
 
     @Test
@@ -38,7 +39,7 @@ public class ShoppingListTest {
         Field field = shoppingList.getClass().getDeclaredField("products");
         field.setAccessible(true);
         List products = (List)field.get(shoppingList);
-        assertEquals(products.size(), 1);ggg
+        assertEquals(products.size(), 1);
     }
 
     @Test
@@ -52,7 +53,7 @@ public class ShoppingListTest {
     }
 
 
-    @Test
+   // @Test
     public void getPriceTest(){
         result = product.getId();
         assertEquals("001", result);
