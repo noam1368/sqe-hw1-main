@@ -28,6 +28,7 @@ public class ShoppingListTest {
 
         supermarket = Mockito.mock(Supermarket.class);
         shoppingList = new ShoppingList(supermarket);
+        shoppingList=null;
     }
 
     @Test
