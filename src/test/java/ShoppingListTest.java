@@ -28,7 +28,7 @@ public class ShoppingListTest {
 
         supermarket = Mockito.mock(Supermarket.class);
         shoppingList = new ShoppingList(supermarket);
-        shoppingList=null;fdsf
+        shoppingList=null
     }
 
     @Test
@@ -38,7 +38,7 @@ public class ShoppingListTest {
         Field field = shoppingList.getClass().getDeclaredField("products");
         field.setAccessible(true);
         List products = (List)field.get(shoppingList);
-        assertEquals(products.size(), 1);
+        assertEquals(products.size(), 1);ggg
     }
 
     @Test
